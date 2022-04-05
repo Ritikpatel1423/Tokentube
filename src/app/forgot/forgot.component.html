@@ -1,0 +1,31 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="text-center">
+                    <h1>Forgot Password</h1>
+                    <h6>Please enter email</h6>
+                </div>
+
+                <form [formGroup]="forgotForm" (ngSubmit)="forgot()">
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Email address</label>
+                        <input formControlName="email" type="email" class="form-control" id="exampleInputEmail1"
+                            aria-describedby="emailHelp">
+                        <div *ngIf="(submitted && f['email'].errors) || (f['email'].errors && f['email'].touched)"
+                            class="invalid-feedback">
+                            <div *ngIf="f['email'].errors['required']"> Email is required.</div>
+                            <div *ngIf="f['email'].errors['pattern']"> Email is invalid.</div>
+                        </div>
+                        <div id="emailHelp" class="form-text">You will get an email to create a new password on your
+                            email id.</div>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+
+
+            </div>
+        </div>
+    </div>
+</div>

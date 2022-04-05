@@ -1,0 +1,196 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "signupUsers": [
+    {
+      "fullname": "Riddhi prajapati",
+      "mobile": 1234567890,
+      "email": "riddhi@gmail.com",
+      "password": "1234",
+      "id": 1
+    },
+    {
+      "fullname": "Riddhi",
+      "mobile": 1234567890,
+      "email": "riddhi@gmail.com",
+      "password": "1234",
+      "id": 2
+    },
+    {
+      "first_name": "Riddhi",
+      "last_name": "Prajapati",
+      "email": "riddhi@gamil.com",
+      "password": "123",
+      "password_confirmation": "123",
+      "id": 3
+    },
+    {
+      "first_name": null,
+      "last_name": null,
+      "email": null,
+      "password": "1224",
+      "password_confirmation": "1221432324",
+      "id": 4
+    },
+    {
+      "first_name": null,
+      "last_name": null,
+      "email": null,
+      "password": "1223w",
+      "password_confirmation": "1232434",
+      "id": 5
+    },
+    {
+      "first_name": "vaibhavi",
+      "last_name": "prajapati",
+      "email": "pvaibhavi@gmail.com",
+      "password": "vaibhu",
+      "password_confirmation": "vaibhu",
+      "id": 6
+    },
+    {
+      "first_name": null,
+      "last_name": null,
+      "email": null,
+      "password": null,
+      "password_confirmation": null,
+      "id": 7
+    },
+    {
+      "first_name": "riddhi",
+      "last_name": "prajapati",
+      "email": "pvaibhavi@gmail.com",
+      "password": "123",
+      "password_confirmation": "123",
+      "id": 8
+    },
+    {
+      "first_name": "riddhi",
+      "last_name": "prajapati",
+      "email": "pvaibhavi@gmail.com",
+      "password": "123",
+      "password_confirmation": "123",
+      "id": 9
+    },
+    {
+      "first_name": null,
+      "last_name": null,
+      "email": null,
+      "password": null,
+      "password_confirmation": null,
+      "id": 10
+    },
+    {
+      "first_name": null,
+      "last_name": null,
+      "email": null,
+      "password": null,
+      "password_confirmation": null,
+      "id": 11
+    },
+    {
+      "first_name": null,
+      "last_name": null,
+      "email": null,
+      "password": null,
+      "password_confirmation": null,
+      "id": 12
+    },
+    {
+      "first_name": "riddhi",
+      "last_name": "prajapati",
+      "email": "pvaibhavi@gmail.com",
+      "password": "123",
+      "password_confirmation": "123",
+      "id": 13
+    },
+    {
+      "first_name": null,
+      "last_name": null,
+      "email": null,
+      "password": null,
+      "password_confirmation": null,
+      "id": 14
+    },
+    {
+      "first_name": null,
+      "last_name": null,
+      "email": null,
+      "password": null,
+      "password_confirmation": null,
+      "id": 15
+    },
+    {
+      "first_name": null,
+      "last_name": null,
+      "email": null,
+      "password": null,
+      "password_confirmation": null,
+      "id": 16
+    },
+    {
+      "first_name": null,
+      "last_name": null,
+      "email": null,
+      "password": null,
+      "password_confirmation": null,
+      "id": 17
+    },
+    {
+      "first_name": null,
+      "last_name": null,
+      "email": null,
+      "password": null,
+      "password_confirmation": null,
+      "id": 18
+    },
+    {
+      "first_name": null,
+      "last_name": null,
+      "email": null,
+      "password": null,
+      "password_confirmation": null,
+      "id": 19
+    },
+    {
+      "first_name": null,
+      "last_name": null,
+      "email": null,
+      "password": null,
+      "password_confirmation": null,
+      "id": 20
+    },
+    {
+      "first_name": null,
+      "last_name": null,
+      "email": null,
+      "password": null,
+      "password_confirmation": null,
+      "id": 21
+    },
+    {
+      "first_name": null,
+      "last_name": null,
+      "email": null,
+      "password": null,
+      "password_confirmation": null,
+      "id": 22
+    },
+    {
+      "first_name": "riddhi",
+      "last_name": "prajapati",
+      "email": "pvaibhavi@gmail.com",
+      "password": "123",
+      "password_confirmation": "123",
+      "id": 23
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

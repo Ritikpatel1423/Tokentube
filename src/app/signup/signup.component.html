@@ -1,0 +1,94 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="text-center">
+                    <h1>Sing Up</h1>
+                    <h6>Register Yourself!!</h6>
+                </div>
+
+                <form [formGroup]="signupForm" (ngSubmit)="singUp()">
+                    <div class="mb-3">
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">FirstName</label>
+                            <input formControlName="first_name" type="text" class="form-control"
+                                id="exampleInputfirstname"
+                                [ngClass]="{'danger-class': (submitted && f['first_name'].errors) || (f['first_name'].errors && f['first_name'].touched)}" />
+                            <div *ngIf="(submitted && f['first_name'].errors) || (f['first_name'].errors && f['first_name'].touched)"
+                                class="invalid-feedback">
+                                <div *ngIf="f['first_name'].errors['required']"> First Name is required</div>
+                            </div>
+
+
+                            <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label">LastName</label>
+                                <input formControlName="last_name" type="text" class="form-control"
+                                    id="exampleInputlastname"
+                                    [ngClass]="{'danger-class': (submitted && f['last_name'].errors) || (f['last_name'].errors && f['last_name'].touched)}" />
+                                <div *ngIf="(submitted && f['last_name'].errors) || (f['last_name'].errors && f['last_name'].touched)"
+                                    class="invalid-feedback">
+                                    <div *ngIf="f['last_name'].errors['required']"> last Name is required</div>
+                                </div>
+                            </div>
+
+
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input formControlName="email" type="email" class="form-control" id="exampleInputEmail"
+                                aria-describedby="emailHelp">
+                            <div *ngIf="(submitted && f['email'].errors) || (f['email'].errors && f['email'].touched)"
+                                class="invalid-feedback">
+                                <div *ngIf="f['email'].errors['required']"> Email is required.</div>
+                                <div *ngIf="f['email'].errors['pattern']"> Email is invalid.</div>
+
+                            </div>
+                        </div>
+
+
+
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <span class="credIcons">
+                                <input formControlName="password" (input)="NotMatched($event.target, 'pass')"
+                                    type="{{isPasswordHide ? 'text' : 'password'}}" maxlength="32"
+                                    [ngClass]="{'danger-class': (submitted && f['password'].errors) || (f['password'].errors && f['password'].touched)}"
+                                    name="password" class="form-control" placeholder="Password">
+                            </span>
+                            <div *ngIf=" (submitted && f['password'].errors) || (f['password'].errors && f['password'].touched)"
+                                class="invalid-feedback">
+                                <div *ngIf="f['password'].errors['required']"> Password is required</div>
+                            </div>
+
+
+                            <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label">Confirm Password</label>
+                                <span class="credIcons">
+                                    <input formControlName="password_confirmation"
+                                        (input)="NotMatched($event.target, 'conpass')"
+                                        type="{{isConfirmPasswordHide ? 'text' : 'password'}}" maxlength="32"
+                                        [ngClass]="{'danger-class': (submitted && f['password_confirmation'].errors) || (f['password_confirmation'].errors && f['password_confirmation'].touched)}"
+                                        name="password_confirmation" class="form-control"
+                                        placeholder="Confirm password">
+                                </span>
+                                <div *ngIf="(submitted && f['password_confirmation'].errors) || (f['password_confirmation'].errors && f['password_confirmation'].touched)"
+                                    class="invalid-feedback">
+                                    <div *ngIf="f['password_confirmation'].errors['required']">Confirm Password is
+                                        required
+                                    </div>
+                                </div>
+                                <div
+                                    *ngIf="f['password_confirmation'].value && isNotMatched && f['password_confirmation'].touched">
+                                    <small class="text-danger">Password not matched</small>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary" [disabled]="isNotMatched">Sign Up</button>
+
+                            <div>
+                                <a style="color: #fff;" routerLink="/login">Already registered? Click to Login!!</a>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
